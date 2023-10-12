@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Oswald&display=swap');
+
+@keyframes pulse {
+    0% {background-color: pink;}
+    50% {background-color: purple;}
+    75% {background-color: blue;}
+    100% {background-color: #B8F9BE;}
+    
+}
+
+@keyframes change_font_color {
+    from {color: orange;}
+    to {color: red;}
+    
+}
+
+h1{
+    color: orange;
+    text-align: center;
+    font-size: 50px;
+    font-family: Oswald;
+    animation-name: change_font_color;
+    animation-duration: 2s;
+}
+
+p {
+    animation-name: change_font_color;
+    animation-duration: 2s;
+    text-align: center;
+    color: orange;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+
+
+}
+
+body{
+    animation: pulse 4s ease;
+
+}
+
+.fried_rice{
+    grid-row: span 2;
+}
